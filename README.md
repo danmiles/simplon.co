@@ -8,4 +8,6 @@ Place of study: Nice, France.
 
 Date of training 17/05/2021 --- 10/12/2021.
 
+Site url: https://danmiles.github.io/simplon.co/
+
 Code: https://github.com/danmiles/simplon.co/tree/main/all-exercises
