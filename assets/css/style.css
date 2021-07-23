@@ -53,6 +53,18 @@ body {
     }
 }
 
+.resources {
+    margin-bottom: 50px;
+}
+
+.resources h3 {
+    margin-bottom: 30px;
+}
+
+.resources ol li {
+    font-size: 20px;
+}
+
 .card {
     width: 100%;
     height: auto;
