@@ -1,0 +1,66 @@
+html {
+    background: #018DED url(img/time.jpg);
+    background-size: cover;
+    background-position: center;
+    font-family: 'helvetica neue';
+    text-align: center;
+    font-size: 10px;
+}
+
+body {
+    margin: 0;
+    font-size: 2rem;
+    display: flex;
+    flex: 1;
+    min-height: 100vh;
+    align-items: center;
+}
+
+
+/* ========================================================================== */
+
+#clockContainer {
+    position: relative;
+    margin: auto;
+    height: 30vw;
+    /*to make the height and width responsive*/
+    width: 30vw;
+    background: url(img/clock.png) no-repeat;
+    /*setting our background image*/
+    background-size: 100%;       
+}
+  
+#hour,
+#minute,
+#second {
+    position: absolute;    
+    border-radius: 10px;
+    transform-origin: bottom;
+}
+  
+#hour {
+    background: #030b11;
+    width: 2%;
+    height: 25.5%;
+    top: 23.3%;
+    left: 49.5%;
+    z-index: 10;    
+}
+  
+#minute {
+    background: #081722;
+    width: 1.5%;
+    height: 35%;
+    top: 13.8%;
+    left: 49.5%;
+    z-index: 8;    
+}
+  
+#second {
+    background: #e3eef5;
+    width: 1%;
+    height: 40%;
+    top: 9%;
+    left: 49.5%;
+    z-index: 6;    
+}

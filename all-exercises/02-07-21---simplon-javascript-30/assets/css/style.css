@@ -1,0 +1,60 @@
+@font-face {
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 400;
+    src: url("../fonts/roboto-regular-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+  font-style: italic;
+  font-weight: 400;
+  src: url("../fonts/roboto-italic-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+  font-style: normal;
+  font-weight: 700;
+  src: url("../fonts/roboto-bold-webfont.woff2") format("woff2");
+}
+
+@font-face {
+    font-family: "Roboto";
+  font-style: italic;
+  font-weight: 700;
+  src: url("../fonts/roboto-bolditalic-webfont.woff2") format("woff2");
+}
+
+body {
+    font-size: 16px;
+    line-height: 1.5;
+    min-width: 320px;
+    position: relative;
+    font-family: "Roboto", sans-serif;
+    overflow-x: hidden;
+    color: #2f2d2c;
+}
+
+.js-30 {
+    padding: 350px 0;
+}
+
+.js-30 .main_title {
+    font-size: 60px;
+    font-weight: bold;
+    text-align: center;
+    margin-bottom: 100px;
+}
+
+@media (max-width: 767px) {
+    .js-30 .main_title {
+        font-size: 45px;
+    }
+}
+
+.card {
+    width: 100%;
+    height: auto;
+    margin-bottom: 20px;
+}

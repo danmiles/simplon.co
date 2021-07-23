@@ -1,0 +1,88 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title> MeteoApp(Ajax) - Simplon.co</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Two small Javascript applications to find out the temperature in different cities. The first application runs on the original JavaScript. Another app shows the average temperature and runs on a Vue.js framework.">
+
+    <link rel="icon" type="image/png" href="img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+
+    <!-- Main CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+</head>
+
+<body>
+
+
+    <section class="top-banner">
+        <div class="container">
+            <h1 class="heading text-center">Simple Weather App</h1>
+            <form>
+                <input type="text" placeholder="Search for a city" autofocus>
+                <button type="submit">submit</button>
+                <span class="msg"></span>
+            </form>
+        </div>
+    </section>
+
+    <section class="ajax-section">
+        <div class="container">
+            <ul class="cities"></ul>
+        </div>
+    </section>
+
+    <footer class="page-footer">
+
+        <div id="app-chart">
+            <div class="container">
+                <div class="my-5">
+                    <form v-on:submit.prevent="getData">
+                        <div class="row">
+                            <div class="col-md-8 offset-md-2">
+                                <h2 class="app_title">Average temperature in the city</h2>
+                                <h5>Enter A City:</h5>
+                                <div class="input-group">
+                                    <input type="text" class="form-control" v-model="city">
+                                    <div class="input-group-append">
+                                        <button class="btn_chart" type="submit">Submit</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="my-5">
+                    <div class="alert alert-info" v-show="loading">
+                        Loading...
+                    </div>
+                    <div v-show="chart != null">
+                        <canvas id="myChart"></canvas>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- End APP Meteo -->
+        
+
+    </footer>
+
+    <!-- Vue JS -->
+    <script src="https://cdn.jsdelivr.net/npm/vue"></script>
+    <!-- Moment JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.13.0/moment.min.js"></script>
+    <!-- Chart JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.7.2/Chart.min.js"></script>
+    <!-- Axios -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.18.0/axios.min.js"></script>
+
+    <!-- Main JS -->
+    <script src="js/main.js"></script>
+
+</body>
+
+</html>
