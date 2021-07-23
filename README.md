@@ -1,5 +1,5 @@
 # Simplon.co --- All Exercises
 
-All the exercises performed during my studies at the Simplon.co web developer school are presented here.
+Here are collected all the work that I performed in the process of studying at the Simplon.co - developer school (https://simplon.co/). (Développeur web et web mobile). Date of training 17/05/2021 --- 10/12/2021.
 
-The code is in the all-exercises folder
+Code: https://github.com/danmiles/simplon.co/tree/main/all-exercises
