@@ -24,22 +24,23 @@ body {
 .container {
     max-width: 1200px;
     margin: 0 auto;
-    padding: 30px;
+    padding: 0 15px;
 }
 
 .home__header {
     margin-bottom: 100px;
+    text-align: center;
 }
 
 .home__title {
     font-size: 60px;
-    color: #fff;
-    text-align: center;
+    color: #fff;    
     padding: 50px 10px;
 }
 
 .navbar-logo img {
     max-height: 80px;
+    
 }
 
 .description {
